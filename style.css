@@ -1,0 +1,254 @@
+/* First part */
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+.hd1 {
+    background: url('images/FIrst.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: auto;
+    height: 72.5vh;
+    display: flex;
+}
+.logo {
+  position: absolute;
+  left:15%;
+  top: 1rem;
+}
+.logo img{
+    width: 35px;
+    height: auto;
+}
+.nav1{
+    position: absolute;
+    top: 1rem;
+    left: 60%;
+}
+.nav1 a{
+    margin-right: 20px;
+    text-decoration:underline;
+    color: whitesmoke;
+}
+.nav1 a:hover {
+    color: #7d6e6e;
+}
+/* Second part */
+.logo2 {
+    position: absolute;
+    left:15%;
+    top:34rem;
+  }
+.logo2 img{
+    top:20px;
+    width: 95px;
+    height: auto;
+}
+/* Third part */
+.nav2{
+    position: absolute;
+    top: 34rem;
+    left: 60%;
+}
+.nav2 a{
+    margin-right: 20px;
+    text-decoration:underline;
+    color:#7d6e6e;
+}
+.nav1,.nav2{
+    font-size: 13px;
+}
+.hd2{
+    background: url('images/Bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    position: relative;
+     margin-top:50px;  
+}
+
+/* History section */
+
+.history-text {
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 200;
+    position: relative;
+    left: 10%;
+    margin-left: 10rem;
+
+  }
+  .history-sentence {
+    width: 62%;
+  }
+  .history {
+    margin-top: 3rem;
+  }
+  .hisImg{
+    position: relative;
+    left:15%;
+  }
+ /* Styles for the background container of the carousel */
+ .carousel-bg {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(65, 79, 107, 0.85);
+  bottom: 0;
+  padding: 0%;
+  height: 170px;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.carousel {
+    display: flex; 
+    /* flex-wrap: nowrap; 
+    margin-left: 10rem; */
+    justify-content: center;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center; 
+    display: none;
+}
+
+.carousel-item img {
+    margin-right: 10px;
+    margin-top: 20px; 
+    max-width: 150px; 
+}
+.carousel-item.active {
+    display: block; 
+}
+@media (max-width: 768px) {
+    .carousel {
+        margin-left: 0;
+        width: 100%; 
+    }
+    .carousel-item img {
+        max-width: calc(25vw - 20px);
+    }
+}
+
+@media (max-width: 576px) { 
+    .carousel-item img { 
+        max-width: calc(40vw - 20px); 
+    }
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+/* Third section */
+.hd3 {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+}
+
+.climb-text-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.climb-text-section {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0; 
+    align-items: center; 
+}
+
+.climb {
+    margin-right: 20px; 
+}
+
+.climb-text {
+    font-size: 0.9rem;
+    font-weight: 200;
+    white-space: normal; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sp-img{
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+    position: absolute;
+    
+}
+.tc{
+    background-color:rgba(65, 79, 107, 0.85);
+    height: 4vh;
+}
+.nl {
+    border: none;
+    background: none; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+    color: white;
+   font-weight: 600;
+   font-size: 15px;
+}
+.active{
+    background: gray;
+    text-decoration: underline;
+    color:rgba(65, 79, 107, 0.85);
+}
+.ni{
+    display: inline;
+    left: 10%;
+    position:relative;
+    text-decoration: none;
+    margin: 3px;
+    margin-top: 5px; 
+}
+
+.schedule{
+    z-index: 2;
+    width: 30%;
+    position: relative;
+    top: 10vh;
+    left: 10%;
+}
+/* footer */
+.foot{
+    background: rgba(65, 79, 107, 0.85);
+    height:13vh;
+    top: 102px;
+    position: relative;
+    width: 100%;
+   
+}
+.fl{
+    position: relative;
+    top: 10px;
+    left: 10%;
+}
+.fc{
+    position: relative;
+    left:34%;
+}
+
